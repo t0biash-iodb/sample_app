@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #cff;
+  background: #7EEF3C;
 }
 
 header {
@@ -12,14 +12,14 @@ header {
 
 header img {
   padding: 1em;
-  background: #fff;
+  background: #53DF00;
 }
 
 section {
   margin-top: 1em;
   font-size: 120%;
   padding: 20px;
-  background: #fff;
+  background: #53DF00;
 }
 
 section h1 {
@@ -29,24 +29,24 @@ section h1 {
 /* Links */
 
 a {
-  color: #09c;
+  color: #0D58A6;
   text-decoration: none;
 }
 
 a:hover {
-  color: #069;
+  color: #04376C;
   text-decoration: underline;
 }
 
 a:visited {
-  color: #069;
+  color: #04376C;
 }
 
 /* Navigation */
 
 nav {
   float: right;
-  background: white;
+  background: #53DF00;
   padding: 0 0.7em;
   white-space: nowrap;
 }
@@ -68,7 +68,7 @@ nav ul li a {
 }
 
 nav ul li a:visited {
-  color: #09c;
+  color: #0D58A6;
 }
 
 nav ul li a:hover {
