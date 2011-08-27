@@ -1,3 +1,4 @@
-# Ruby on Rails Tutorial: sample application
+# Mini Tweet
 
-This is the sample application for [*Ruby on Rails Tutorial: Learn Rails by Example*](http://railstutorial.org/) by [Michael Hartl](http://michaelhartl.com/).
+Projekt na Inżynierię Oprogramowania i Bazy Danych.
+Wykonanie: Tomasz Płonka.
