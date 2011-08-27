@@ -15,14 +15,14 @@ class UsersController < ApplicationController
   end
 
   def following
-    @title = "Following"
+    @title = "Oberwowani"
     @user = User.find(params[:id])
     @users = @user.following.paginate(:page => params[:page])
     render 'show_follow'
   end
   
   def followers
-    @title = "Followers"
+    @title = "Obserwujący"
     @user = User.find(params[:id])
     @users = @user.followers.paginate(:page => params[:page])
     render 'show_follow'
@@ -30,36 +30,36 @@ class UsersController < ApplicationController
 
   def new
     @user  = User.new
-    @title = "Sign up"
+    @title = "Zarejestruj się"
   end
   
   def create
     @user = User.new(params[:user])
     if @user.save
       sign_in @user
-      redirect_to @user, :flash => { :success => "Welcome to the Sample App!" }
+      redirect_to @user, :flash => { :success => "Witaj w MiniTweetcie!" }
     else
-      @title = "Sign up"
+      @title = "Zarejestruj się"
       render 'new'
     end
   end
   
   def edit
-    @title = "Edit user"
+    @title = "Edytuj użytkownika"
   end
   
   def update
     if @user.update_attributes(params[:user])
-      redirect_to @user, :flash => { :success => "Profile updated." }
+      redirect_to @user, :flash => { :success => "Uaktualniono Profil." }
     else
-      @title = "Edit user"
+      @title = "Edytuje użytkownika"
       render 'edit'
     end
   end
 
   def destroy
     @user.destroy
-    redirect_to users_path, :flash => { :success => "User destroyed." }
+    redirect_to users_path, :flash => { :success => "Użytkownik usunięty." }
   end
 
   private
