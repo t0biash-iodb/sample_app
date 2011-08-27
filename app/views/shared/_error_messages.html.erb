@@ -2,10 +2,10 @@
   <div id="error_explanation">
     <h2>
       <%= pluralize(object.errors.count, "error") %>
-      prohibited this <%= object.class.to_s.underscore.humanize.downcase %>
-      from being saved:
+      uniemożliwone przez <%= object.class.to_s.underscore.humanize.downcase %>
+      przed zapisaniem:
     </h2>
-    <p>There were problems with the following fields:</p>
+    <p>W następujących polach znaleziono błędy:</p>
     <ul>
     <% object.errors.full_messages.each do |message| %>
       <li><%= message %></li>

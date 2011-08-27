@@ -1,18 +1,19 @@
+# -*- coding:UTF-8 -*-
 <header>
   <%= link_to logo, root_path %>
   <nav class="round">
     <ul>
-      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Strona główna", root_path %></li>
       <% if signed_in? %>
-        <li><%= link_to "Profile", current_user %></li>
-        <li><%= link_to "Users", users_path %></li>
-        <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+        <li><%= link_to "Profil", current_user %></li>
+        <li><%= link_to "Użytkownicy", users_path %></li>
+        <li><%= link_to "Ustawienia", edit_user_path(current_user) %></li>
       <% end %>
-      <li><%= link_to "Help", help_path %></li>
+      <li><%= link_to "Pomoc", help_path %></li>
       <% if signed_in? %>
-        <li><%= link_to "Sign out", signout_path %></li>
+        <li><%= link_to "Wyloguj się", signout_path %></li>
       <% else %>
-        <li><%= link_to "Sign in", signin_path %></li>
+        <li><%= link_to "Zaloguj się", signin_path %></li>
       <% end %>
     </ul>
   </nav>

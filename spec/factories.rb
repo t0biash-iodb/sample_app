@@ -1,12 +1,12 @@
 Factory.define :user do |user|
-  user.name                  "Michael Hartl"
-  user.email                 "mhartl@example.com"
-  user.password              "foobar"
-  user.password_confirmation "foobar"
+  user.name                  "Tomasz Płonka"
+  user.email                 "t0biash-iodb@wp.pl"
+  user.password              "123abc---"
+  user.password_confirmation "123abc---"
 end
 
 Factory.sequence :email do |n|
-  "person-#{n}@example.com"
+  "person-#{n}@wp.pl"
 end
 
 Factory.sequence :name do |n|
